@@ -56,10 +56,67 @@ textBox.addEventListener("click", () => {
     
     
     
-    document.body.appendChild(p1) 
+    textBox.appendChild(p1) 
     
     
 })
+
+
+//! Esercizio4
+
+
+
+
+let section1 = document.getElementById("section1");
+let section2 = document.getElementById("section2");
+let section3 = document.getElementById("section3");
+const pxSection = document.createElement("p")
+
+section1.addEventListener("click", () => {
+    
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    section1.style.background = `#${randomColor}`;
+    
+    addEventListener("scroll", () => {
+        
+        pxSection.innerText = `${scrollY}px`;
+        
+        section1.appendChild(pxSection);
+    })
+    
+    
+})
+
+section2.addEventListener("click", () => {
+    
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    section2.style.background = `#${randomColor}`;
+    
+    addEventListener("scroll", () => {
+        
+        pxSection.innerText = `${scrollY}px`;
+        
+        section2.appendChild(pxSection);
+    })
+    
+    
+})
+
+section3.addEventListener("click", () => {
+    
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    section3.style.background = `#${randomColor}`;
+    
+    addEventListener("scroll", () => {
+        
+        pxSection.innerText = `${scrollY}px`;
+        
+        section3.appendChild(pxSection);
+    })
+    
+    
+})
+
 
 
 
