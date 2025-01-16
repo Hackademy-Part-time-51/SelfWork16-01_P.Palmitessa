@@ -1,3 +1,4 @@
+//! Esercizio1
 let box1 = document.querySelector(".box1");
 let box2 = document.querySelector(".box2");
 let box3 = document.querySelector(".box3"); 
@@ -31,5 +32,33 @@ box3.addEventListener("click", () => {
     box3.appendChild(p);
     
 })
+
+//! Esercizio2
+
+const heightTop = document.createElement("p");
+
+window.addEventListener("resize", () => {
+    heightTop.innerText = `L'altezza attuale dal Top della pagina è di ${heightTop.offsetTop}`
+    
+    document.body.appendChild(heightTop);
+    
+    
+})
+
+//! Esercizio3
+
+let textBox = document.getElementById("myDiv");
+const p1 = document.createElement("p");
+
+textBox.addEventListener("click", () => {
+    
+    p1.innerText = `La larghezza dell'elemento cliccato è di ${textBox.offsetWidth}px.`
+    
+    const widthDiv = document.querySelector(".esercizio3");
+    document.widthDiv.appendChild(textBox) 
+    
+    
+})
+
 
 
