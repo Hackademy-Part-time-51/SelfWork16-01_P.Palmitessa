@@ -54,8 +54,9 @@ textBox.addEventListener("click", () => {
     
     p1.innerText = `La larghezza dell'elemento cliccato è di ${textBox.offsetWidth}px.`
     
-    const widthDiv = document.querySelector(".esercizio3");
-    document.widthDiv.appendChild(textBox) 
+    
+    
+    document.body.appendChild(p1) 
     
     
 })
