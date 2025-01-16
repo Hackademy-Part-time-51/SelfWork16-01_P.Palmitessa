@@ -127,4 +127,22 @@ section3.addEventListener("click", () => {
     
 })
 
+//! BONUS
 
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".brand-scroll-track");
+    const cloneItems = () => {
+        let items = document.querySelectorAll(".brand")
+        items.forEach ((i) => {
+            let clone = i.cloneNode(True);
+            track.appendChild(clone);
+        })
+    }
+    cloneItems();
+    track.addEventListener("mouseenter", () => {
+        track.style.animationPlayState = "paused";
+    })
+    track.addEventListener("mouseleave", () => {
+        track.style.animationPlayState = "running";
+    })
+})
