@@ -1,3 +1,13 @@
+
+//! Esercizio5 
+
+let spaceImg = document.getElementById("img");
+
+window.onload = function() {
+    spaceImg.innerHTML = `<img src="https://picsum.photos/500">`;
+
+}
+
 //! Esercizio1
 let box1 = document.querySelector(".box1");
 let box2 = document.querySelector(".box2");
@@ -116,7 +126,5 @@ section3.addEventListener("click", () => {
     
     
 })
-
-
 
 
